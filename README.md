@@ -4,7 +4,9 @@ Web app móvil para capturar la opinión de cada ciclista al terminar un recorri
 
 Es un frontend completo sin backend: persiste en `localStorage` y simula las notificaciones. Kodarvia integra después el backend, las APIs de WhatsApp y correo, la autenticación y los textos legales definitivos (ver [Qué está simulado](#qué-está-simulado-y-dónde-conecta-kodarvia)).
 
-**URL de previsualización: [PENDIENTE]**
+**URL de previsualización: https://kodarvia-encuesta.vercel.app/**
+
+Panel: https://kodarvia-encuesta.vercel.app/admin · Encuesta con QR de ejemplo: https://kodarvia-encuesta.vercel.app/?recorrido=palermo&guia=mariana
 
 ---
 
@@ -146,4 +148,4 @@ npm run test
 | 5 | Filtros por fecha y por rango de estrellas correctos | `filterByDate`, `filterByStars`, `applyFilters` en `src/lib/stats.ts`, con tests en zona de Buenos Aires. |
 | 6 | CSV descargable con todas las columnas y marca de tiempo | `src/lib/csv.ts` (`CSV_HEADERS`, `buildCsv`, `downloadCsv`) y botón "Exportar CSV" del panel. |
 | 7 | Consentimiento obligatorio antes del envío | `canSubmit` en `src/lib/survey.ts`, `ConsentStep.tsx` con error accesible (`role="alert"`), `submitResponse` rechaza sin consentimiento. |
-| 8 | Repo con README completo y URL de previsualización funcionando | Este README; URL pendiente de despliegue. |
+| 8 | Repo con README completo y URL de previsualización funcionando | Este README y https://kodarvia-encuesta.vercel.app/ (repo `kodarvia-encuesta`). |

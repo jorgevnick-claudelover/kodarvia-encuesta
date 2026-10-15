@@ -1,4 +1,4 @@
-# Feedback inmediato para cicloturistas · Circuitos en Bici BA
+# Feedback inmediato para cicloturistas · Pedalea Rutas
 
 Web app móvil para capturar la opinión de cada ciclista al terminar un recorrido guiado por Buenos Aires, resolver los problemas en el día (alerta al encargado ante 1-2 estrellas) y derivar las reseñas positivas a Google Maps (solo ante 4-5 estrellas). Incluye un panel administrativo en tiempo real con KPIs, gráficos, filtros, alertas y exportación CSV.
 
@@ -104,7 +104,7 @@ Cada respuesta se guarda con: `id`, `createdAt` (ISO UTC), `recorrido`, `guia`, 
 | Autenticación del panel | Sin login; banner "Acceso sin autenticación en esta demo". | Envolver la ruta `/admin` en `src/App.tsx` con el proveedor de auth y quitar el banner en `src/pages/AdminPage.tsx`. |
 | Persistencia | `localStorage` con prefijo versionado `bicifeedback:v1:` y respaldo en memoria si falla. | `src/lib/storage.ts` (`readJSON`/`writeJSON`) o, a más alto nivel, `src/lib/store.ts` (`submitResponse`, `resolveAlert`, `markReviewClicked`). |
 | Textos legales | Política provisional con la marca "Texto provisional: Kodarvia redacta los términos definitivos". | `src/components/survey/PrivacyModal.tsx`. |
-| Datos del operador, recorridos y guías | Marca ficticia "Circuitos en Bici BA". | `src/config.ts`. |
+| Datos del operador, recorridos y guías | Operador "Pedalea Rutas". | `src/config.ts`. |
 
 ## Datos de ejemplo
 

@@ -12,8 +12,8 @@ export interface Guia {
 }
 
 export const config = {
-  /** Marca ficticia, editable */
-  operador: 'Circuitos en Bici BA',
+  /** Nombre del operador, editable */
+  operador: 'Pedalea Rutas',
   lema: 'Recorridos guiados en bici por Buenos Aires',
 
   recorridos: [
@@ -38,7 +38,7 @@ export const config = {
   encargado: {
     nombre: 'Encargado de operaciones',
     whatsapp: '+54 9 11 5555 0101',
-    email: 'operaciones@circuitosenbici.com.ar',
+    email: 'operaciones@pedalearutas.com.ar',
   },
 
   timeZone: 'America/Argentina/Buenos_Aires',
